@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm <span>Lucky Pattanayak</span><br>Welcome To My Portfolio Page</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\LUCKY\OneDrive\Desktop\Portfolio file\user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello everyone I'm a passionate and skilled web developer.Pursuing a CS degree and has experience in Java,HTML,CSS,Javascript,Python and many more...</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Fronted Development</span><br>Fronted Development</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - 2024</span><br>Internship in Prodigy</li>
+                        <li><span>2024 - 2024</span><br>Internship in Java programing</li>
+                        <li><span>2024 - 2024</span><br>Internship in Python Web Development</li>
+                        <li><span>2024 - 2024</span><br>Internship in Oasis Infotech</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2008-2020</span><br>D.A.V Public School,Unit-8,Bhubaneswar</li>
+                        <li><span>2020-2022</span><br>D.A.V Public School,Unit-8,Bhubaneswar</li>
+                        <li><span>2022-2026</span><br>Institute of Technical Education and Research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Fronted Design</h2>
+                <p>Front-end design is a key part of web development focused on crafting the visual and interactive aspects of a website or application. It involves creating the user interface (UI) and ensuring a smooth user experience (UX).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <p>Web development encompasses the creation, building, and maintenance of websites and web applications. It involves several stages and technologies that work together to bring a web project to life. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Python Development</h2>
+                <p>Python is a versatile, high-level programming language known for its simplicity and readability, making it a popular choice for both beginners and experienced developers. Python is widely used in various domains, including web development, data science, artificial intelligence, automation, and more.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:\Users\LUCKY\OneDrive\Desktop\Portfolio file\img2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\LUCKY\OneDrive\Desktop\Portfolio file\img1.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\LUCKY\OneDrive\Desktop\Portfolio file\img3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>luckypattanayak04@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\LUCKY\OneDrive\Desktop\Portfolio file\my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lucky <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
